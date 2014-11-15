@@ -1,0 +1,33 @@
+<!doctype html><html lang="pt-PT">	<head>
+		<meta charset="UTF-8" />		<title>Quarto</title>		<meta name="author" content="ic18" />		<meta name="viewport" content="width=device-width; initial-scale=1.0" />				<script>			function delay(URL) {				setTimeout(function() {	window.location = URL }, 500);			}		</script>		<script src="js/jquery-2.1.1.min.js"></script>		<script src="js/paper-collapse.min.js"></script>		<script src="js/ripple.js"></script>						<!-- trocar favicon.ico & apple-touch-icon.png -->		<link rel="shortcut icon" href="/favicon.ico" />		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />				<link href="css/fashion.css" rel="stylesheet">		<link href="css/paper-collapse.css" rel="stylesheet">		<link href="css/material.css" rel="stylesheet">
+	</head>	<body>
+		<div>
+			<header><h1>Quarto Principal</h1></header>
+			<div class="header">
+				<nav class="navega">
+					<ul>						<li><button class="ripple" name="button" onclick="delay('home.html')">Home</button></li>
+						<li><button class="ripple" name="button" onclick="delay('contactos.html')">Contactos</button></li>
+						<li><button class="ripple" name="button" onclick="delay('login.html')">Logout</button></li>					</ul>
+				</nav>
+			</div>
+			<div class="divisions">
+				<ul>					<li>						<button class="ripple" name="button" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+							Estores						</button>
+						<div id="light" class="white_content">
+							<h3>Posicionamento dos Estores</h3>
+							<table>
+								<tr>									<label>cima</label>									<input type="range" min="1" max="9" step="1" name="rating" />									<label>baixo</label>								</tr>							</table>														<a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+						</div>
+						<div id="fade" class="black_overlay"></div>
+					</li>
+					<li>
+						<button class="ripple" name="button" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+							Persianas						</button>
+						<div id="light" class="white_content">							<h3>Altura das Persianas</h3>							<table>								<tr>									<label>cima</label>									<input type="range" min="1" max="9" step="1" name="rating" />									<label>baixo</label>								</tr>							</table>														<a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+						</div>
+						<div id="fade" class="black_overlay"></div>					</li>
+					<li>						<button class="ripple" name="button" onclick="alert('Activou a Luz do Tecto')">							Luz do Tecto						</button>					</li>
+					<li>						<button class="ripple" name="button" onclick="alert('Activou a Luz Cabeceira')">							Luz Cabeceira						</button>					</li>
+					<li>						<button class="ripple" name="button" onclick="alert('Activou a Televisao')">							Televisao						</button>					</li>
+				</ul>
+			</div>

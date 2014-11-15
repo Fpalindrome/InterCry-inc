@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>index</title>
+		<meta name="description" content="" />
+		<meta name="author" content="ic18" />
+		
+		<script>
+			function delay(URL) {
+				setTimeout(function() {	window.location = URL }, 500);
+			}
+		</script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/paper-collapse.min.js"></script>
+		<script src="js/ripple.js"></script>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- trocar favicon.ico & apple-touch-icon.png -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		
+		<link href="css/fashion.css" rel="stylesheet">
+		<link href="css/paper-collapse.css" rel="stylesheet">
+		<link href="css/material.css" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<header>
+				<h3>Posicionamento dos Estores</h3>
+			</header>
+			<nav>
+
+			</nav>
+			<div style="display: inline;">
+				<table>
+					<tr>
+						<label>cima</label>
+						<input type="range" min="1" max="9" step="1" name="rating" />
+						<label>baixo</label>
+					</tr>
+				</table>
+
+			</div>
+			<li>
+				<button name="button" onclick="history.go(-1);">Voltar</button>
+			</li>
+		</div>
+		<footer>
+			<p>&copy; Copyright  by C3 @ ic018</p>
+		</footer>
+	</body>
+</html>

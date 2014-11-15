@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Tutoriais</title>
+		<meta name="description" content="">
+		<meta name="author" content="Miguel Marques">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link href="fashion.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>Tutoriais</h1>
+			</header>
+			<div class="header">
+				<nav class="navega">
+					<ul>
+						<li><button name="button" onclick="window.location.href='home.html'">Home</button></li>
+						<li><button name="button" onclick="window.location.href='contactos.html'">Contactos</button></li>
+						<li><button name="button" onclick="window.location.href='login.html'">Logout</button></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="tutorial">
+				<ul>
+					<li>
+						<button name="button" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+							Estores</button>
+							<div id="light" class="white_content">
+								<video width="320" height="240" controls>
+									<source src="movie.mp4" type="video/mp4">
+									<source src="movie.ogg" type="video/ogg">
+								</video> <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+							</div>
+							<div id="fade" class="black_overlay"></div>
+					</li>
+					<li>
+						<button name="button" onclick="alert('Mataste o JFK outra vez!')">
+							Turret
+						</button>
+					</li>
+					<li>
+						<button name="button" onclick="alert('Shrodinger!')">
+							Luz do tecto
+						</button>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<footer>
+				<p>&copy; Copyright  by C3 @ ic018</p>
+			</footer>
+		</div>
+	</body>
+</html>

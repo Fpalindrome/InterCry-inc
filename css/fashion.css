@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+html {
+	margin: 0px;
+	padding: 0px;
+	font-family: Open Sans;
+	list-style: none;
+	list-style-type: none;
+	background-color: #DCDCDC;
+	background-image: url("../img/white_sand.png");
+}
+
+body{
+	margin:0px;
+}
+
+a:visited {
+	color: rgb(17, 34, 204);
+}
+
+ul li {
+	list-style: none;
+	list-style-type: none;
+}
+
+#navcontainer, .navega {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	background-color: #4CAF50;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.home {
+	float: left;
+}
+
+.optn {
+	float: right;
+}
+
+.procentro {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100px;
+}
+
+.login{
+	margin-top: 20px, auto;
+}
+
+.comtem{
+	padding: 20px;
+	width: 350px;
+}
+
+.butn{
+	margin: 5px;
+}
