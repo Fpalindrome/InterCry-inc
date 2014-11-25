@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>Home</title>
+		<meta name="author" content="ic18" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		
+		<script>
+			function delay(URL) {
+				setTimeout(function() {	window.location = URL }, 500);
+			}
+		</script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/paper-collapse.min.js"></script>
+		<script src="js/ripple.js"></script>		
+		
+		<!-- trocar favicon.ico & apple-touch-icon.png -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		
+		<link href="css/fashion.css" rel="stylesheet">
+		<link href="css/paper-collapse.css" rel="stylesheet">
+		<link href="css/material.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="header">
+		<nav class="navega">
+			<button class="ripple" onclick="delay("#")">Ajuda</button>
+			<button class="ripple" onclick="delay('login.html')">Logout</button>
+		</nav>
+		</div>
+		
+		<!-- corpo -->
+		<div class="comtem">
+			<div class="collapse-card">
+				<div class="title">&gt; <a href="#" class="casa-toggle">Casa</a></div>
+				<div class="body">
+					<ul class="casa-menu">
+						<li><a href="#">Cozinha</a></li>
+						<li><a href="RoomSala.html">Sala</a></li>
+						<li><a href="#">Escritório</a></li>
+						<li><a href="RoomQuarto.html">Quarto Principal</a></li>
+						<li><a href="#">Quarto de Hóspedes</a></li>
+						<li><a href="#">Casa de Banho</a></li>
+						<li><a href="#">Exterior</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="no-collapse-card">
+				<div class="title"><a href="#">Notificações</a></div>
+			</div>
+			
+			<div class="no-collapse-card">
+				<div class="title"><a href="#">Animais</a></div>
+			</div>
+			
+			<div class="collapse-card">
+				<div class="title">&gt; <a href="#" class="agenda-toggle">Agendamentos</a></div>
+				<div class="body">
+					<ul class="agenda-menu">
+						<li><a href="#">Cozinha</a></li>
+						<li><a href="#">Sala</a></li>
+						<li><a href="#">Escritório</a></li>
+						<li><a href="#">Quarto Principal</a></li>
+						<li><a href="#">Quarto de Hóspedes</a></li>
+						<li><a href="#">Casa de Banho</a></li>
+						<li><a href="#">Exterior</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="collapse-card">
+				<div class="title">&gt; <a href="#" class="mais-menu-toggle">Mais</a></div>
+				<div class="body">
+					<ul class="mais-menu">
+						<li><a href="tutoriais1.html">Tutoriais</a></li>
+						<li><a href="#">Definiçõees</a></li>
+						<li><a href="#">Habitação</a></li>
+						<li><a href="#">Alarmes</a></li>
+							<li><a href="#">Advertisers</a></li>
+						<li><a href="#">Corte-geral</a></li>
+					</ul>
+			</div>
+		</div>
+		<script>
+			(function(window, $) {
+			
+				$(function() {
+			
+					$('.ripple').on('click', function(event) {
+						event.preventDefault();
+			
+						var $div = $('<div/>'), btnOffset = $(this).offset(), xPos = event.pageX - btnOffset.left, yPos = event.pageY - btnOffset.top;
+			
+						$div.addClass('ripple-effect');
+						var $ripple = $(".ripple-effect");
+			
+						$ripple.css("height", $(this).height());
+						$ripple.css("width", $(this).height());
+						$div.css({
+							top : yPos - ($ripple.height() / 2),
+							left : xPos - ($ripple.width() / 2),
+							background : $(this).data("ripple-color")
+						}).appendTo($(this));
+			
+						window.setTimeout(function() {
+							$div.remove();
+						}, 2000);
+					});
+			
+				});
+			
+			})(window, jQuery);
+		</script>
+	</body>
+</html>
